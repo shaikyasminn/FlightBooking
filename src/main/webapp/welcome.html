@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FlightBooker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <style type="text/css">
+    
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set the text color */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    background-color: #007bff; /* Blue background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+ 
+  #services {
+    background-color: #eef2ff; /* Soft blue background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+
+
+    .service-item {
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .service-item i {
+        color: #0056b3; /* Primary theme color */
+        margin-bottom: 15px;
+    }
+    .service-title {
+        color: #0056b3;
+        font-size: 1.5rem;
+    }
+    .service-item p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+    .container {
+        max-width: 1200px; /* Adjust container width as needed */
+    }
+    
+   #about {
+    background: #eef2ff;  /* Subtle gradient background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a pop-out effect */
+    margin-top: 20px; /* Adds some spacing from the top */
+}
+
+#about h2 {
+    color: #0056b3; /* Primary color for headings */
+    font-size: 2rem; /* Slightly larger size for heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about p {
+    font-size: 1rem; /* Appropriate size for readability */
+    line-height: 1.6; /* Improves readability */
+    color: #333; /* Darker text color for better contrast */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+.img-fluid {
+    max-width: 100%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow to make the image stand out */
+    margin-top: 20px; /* Space above the image */
+}
+
+#contact {
+    background: #eef2ff;  /* Subtle gradient background */
+    padding: 50px 0; /* Larger padding for better focus */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Ensures full width within column */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); /* Inner shadow for depth */
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #004185;
+}
+
+#contact p {
+    margin-bottom: 20px;
+    color: #666;
+}
+    .footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer h5 {
+    color: #f8f9fa;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ecf0f1;
+}
+
+.footer a {
+    color: #bdc3c7;
+    padding: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ecf0f1;
+}
+
+.footer p.text-center {
+    margin-top: 20px;
+    color: #95a5a6;
+}
+
+/* Font Awesome Icons */
+.linked-icons {
+    padding-right: 10px;
+}
+    
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+    <img src="https://user-images.githubusercontent.com/56977388/178157849-38d2f2c3-1c93-4dac-9577-57f3a752e2cd.png" alt="FlightBooker Logo" style="height: 40px;">
+</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.jsp">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.jsp">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5" id="home">
+        <h1>Welcome to FlightBooker</h1>
+        <p>Experience the best booking service for all your travel needs.</p>
+    </div>
+
+   <div class="container mt-5" id="services">
+    <center><h2 style="color: #0056b3;">Our Services</h2></center>
+    
+    <div class="row">
+        <div class="col-md-4 service-item">
+            <i class="fas fa-plane-departure fa-3x"></i>
+            <h3 class="service-title">Flight Booking</h3>
+            <p>Book flights easily with our user-friendly interface, offering the best rates and quick confirmation.</p>
+        </div>
+        <div class="col-md-4 service-item">
+            <i class="fas fa-bed fa-3x"></i>
+            <h3 class="service-title">Hotel Booking</h3>
+            <p>Reserve your hotel room through our platform and enjoy special discounts for bundled flight and hotel bookings.</p>
+        </div>
+        <div class="col-md-4 service-item">
+            <i class="fas fa-car fa-3x"></i>
+            <h3 class="service-title">Car Rentals</h3>
+            <p>Find the best car rental deals at your destination, with options for pick-up at the airport upon arrival.</p>
+        </div>
+    </div>
+</div>
+     <div class="container mt-5" id="about">
+    <h2>About Us</h2>
+    <p>Founded in 2010, FlightBooker has grown to become one of the most trusted names in the travel industry. We specialize in offering a seamless online booking experience coupled with expert personalized service. Our mission is to simplify the travel planning process while providing the best value options to our customers worldwide.</p>
+    <p>At FlightBooker, we believe travel is about experiences and creating memories that last a lifetime. That's why we partner with numerous airlines and travel providers to ensure our customers have access to a wide range of travel services and deals. Whether you're planning a quick weekend getaway or a month-long adventure across continents, our team is here to support you every step of the way.</p>
+    <p>Our commitment to service excellence and continuous innovation in technology drives us forward. Join us in exploring the world at your fingertips.</p>
+    <img src="https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg" class="img-fluid" alt="Team at FlightBooker">
+</div>
+
+   <div class="container mt-5" id="contact">
+    <div class="text-center">
+        <h2>Contact Us</h2>
+        <p>For inquiries or further information, please reach out to us through the form below. Our support team is ready to help you 24/7.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About FlightBooker</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="text-center">&copy; 2024 FlightBooker. All Rights Reserved.</p>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>

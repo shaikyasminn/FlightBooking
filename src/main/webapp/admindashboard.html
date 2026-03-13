@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+    }
+    .sidebar {
+        height: 100vh;
+        width: 200px;
+        position: fixed;
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .sidebar a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        transition: all 0.3s;
+    }
+    .sidebar a:hover {
+        background: #555;
+        margin-left: 10px;
+        border-left: 3px solid #f90;
+    }
+    .content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <a href="#home">Home</a>
+    <a href="users.jsp">Users</a>
+    <a href="displaybooking.jsp">Bookings</a>
+    <a href="contactList.jsp">Contact List Details</a>
+    <a href="welcome.html">LogOut</a>
+    
+</div>
+<div class="content">
+    <h1>Welcome to the Admin Dashboard</h1>
+    <p>Select an item from the left to manage.</p>
+</div>
+</body>
+</html>
